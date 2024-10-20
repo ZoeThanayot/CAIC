@@ -68,8 +68,8 @@ This project implements a barcode scanning and depth measurement system using a 
 
 3. **Clone this repository**:
    ```bash
-   git clone https://github.com/yourusername/yourproject.git
-   cd yourproject
+   git clone https://github.com/Jinwoo290350/CAIC.git
+   cd CAIC
    ```
 
 ### **2. Set up ESPs (X and Y axis controllers)**
