@@ -65,7 +65,9 @@ def scan_barcode():
         # Convert to grayscale for better barcode detection
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         pil_img = Image.fromarray(gray)
-        barcodes = zbarlight.scan_codes('qrcode', pil_img)
+        
+        # สแกนบาร์โค้ดทั่วไป (ไม่ใช่ QR Code)
+        barcodes = zbarlight.scan_codes('ean13', pil_img)  # หรือใช้ 'code128', 'ean8', 'upca' ตามประเภทที่ต้องการ
         
         if barcodes:
             print(f"Barcode detected: {barcodes}")
@@ -76,6 +78,7 @@ def scan_barcode():
             break
 
     return None
+
 
 def append_to_csv(item_name, depth_data):
     # Append the item name and depth data to CSV
