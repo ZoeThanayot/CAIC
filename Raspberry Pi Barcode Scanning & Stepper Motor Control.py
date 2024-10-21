@@ -22,12 +22,6 @@ csv_filename = "data.csv"
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 
-# Stepper motor pins (if controlled from Pi) - example setup
-STEP_X_PIN = 17
-DIR_X_PIN = 27
-STEP_Y_PIN = 22
-DIR_Y_PIN = 23
-
 # Set up GPIO pins for stepper control
 GPIO.setup(STEP_X_PIN, GPIO.OUT)
 GPIO.setup(DIR_X_PIN, GPIO.OUT)
