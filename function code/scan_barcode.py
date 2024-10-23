@@ -1,3 +1,7 @@
+import cv2
+import numpy as np
+from pyzbar.pyzbar import decode
+from PIL import Image
 # เปิดไฟล์ภาพที่อัปโหลด
 image_path = "/content/LINE_ALBUM_DATA_241014_15.jpg"
 image = Image.open(image_path)
